@@ -13,7 +13,7 @@ spec:
         app: argoupdater
     spec:
       containers:
-      - image: docker.io/shinkiho/argoupdater:1.0
+      - image: docker.io/shinkiho/argoupdater:2.0
         name: argoupdater-container
         ports:
         - containerPort: 80
