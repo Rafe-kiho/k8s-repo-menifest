@@ -6,3 +6,7 @@ resources:
 #- ingress.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+images:
+- name: docker.io/shinkiho/argoupdater
+  newName: docker.io/shinkiho/argoupdater
+  newPullPolicy: Always
