@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample
+  name: argoupdater
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample
+      app: argoupdater
   template:
     metadata:
       labels:
-        app: sample
+        app: argoupdater
     spec:
       containers:
-      - image: ghcr.io/kmaster8/sample:1.0
-        name: sample
+      - image: docker.io/shinkiho/argoupdater:1.0
+        name: argoupdater-container
         ports:
-        - containerPort: 5000
+        - containerPort: 80
