@@ -1,11 +1,11 @@
 apiVersion: v1	
 kind: Service	
 metadata:	
-  name: argoupdater-svc
+  name: myweb-svc
 spec:	
   ports:	
   - port: 80
     targetPort: 80
   type: LoadBalancer
   selector:	
-    app: argoupdater
+    app: nginx
