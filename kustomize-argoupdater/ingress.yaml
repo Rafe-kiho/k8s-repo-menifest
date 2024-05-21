@@ -4,7 +4,7 @@ metadata:
   name: argoupdater
 spec:
   rules:
-  - host: "sample.192.168.50.16.nip.io"
+  - host:
     http:
       paths:
       - pathType: Prefix
